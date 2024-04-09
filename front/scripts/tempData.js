@@ -30,3 +30,12 @@ const tempData = [
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
 ];
+
+//? Objetos desde el HTML
+
+const director1 = `Director: ${tempData[0].director}`;
+const director2 = `Director: ${tempData[1].director}`;
+const director3 = `Director: ${tempData[2].director}`;
+
+const director1Guardian = document.getElementById("director1");
+director1Guardian.textContent = director1;

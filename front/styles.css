@@ -54,7 +54,7 @@
     margin-top: 2vw;
     width: 100vw;
     height: 600px;
-    position: absolute; /*Temporal*/
+    position: relative; /*Temporal*/
 }
 #tituloPelicula{
     background-color: salmon;
@@ -89,6 +89,15 @@
     margin: 0 10px;
 }
 
+.singleTitle{
+    background-color: lime;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    text-align: center;
+
+}
 .imgContainer{
     background-color: white;
     height: 120px;
@@ -107,4 +116,9 @@
     border: 1px solid black;
     margin: 20px;
     background-color: greenyellow;
+}
+
+footer {
+    background-color: gold;
+    text-align: center;
 }
