@@ -1,0 +1,110 @@
+#header {
+  width: 100vw;
+  height: fit-content;
+  background-color: red;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+#headerLeft{
+
+  background-color: blue;
+  width: 40%;
+
+}
+
+#header h1 {
+  width: 50%;
+  height: 80%;
+  background-color: yellow;
+  text-align: center;
+}
+
+#headerLeft ul {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  background-color: green;
+  align-items: center;
+  margin-top: 1.8%;
+  margin-left: 5%;
+  margin-bottom: 1.8%;
+  border: 1px solid black;
+  padding: 5px;
+
+}
+
+#headerLeft .il {
+  background-color: violet;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 8%;
+  padding: 10px;
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+}
+
+#headerLeft .il:hover {
+  text-decoration: underline; /* Subraya el texto al pasar por encima */
+}
+
+#mainContainer{
+    background-color: grey;
+    margin-top: 2vw;
+    width: 100vw;
+    height: 600px;
+    position: absolute; /*Temporal*/
+}
+#tituloPelicula{
+    background-color: salmon;
+    width: 80%;
+    height: fit-content;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 20px;
+    align-items: center;
+}
+#tituloPelicula h2{
+    background-color: springgreen;
+    text-align: center;
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+#cards{
+    background-color: yellow;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.div13{
+    background-color: red;
+    width: 30%;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+
+.imgContainer{
+    background-color: white;
+    height: 120px;
+}
+
+.dataMovie{
+    background-color: aqua;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.dataMovie h5{
+    border: 1px solid black;
+    margin: 20px;
+    background-color: greenyellow;
+}
