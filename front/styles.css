@@ -51,7 +51,7 @@
 
 #mainContainer{
     background-color: grey;
-    margin-top: 2vw;
+    margin-top: 1vw;
     width: 100vw;
     height: fit-content;
     position: relative; /*Temporal*/
@@ -59,13 +59,14 @@
 #tituloPelicula{
     background-color: salmon;
     width: 80%;
-    height: fit-content;
+    height: 20%;
     margin-top: 2%;
     margin-left: 10%;
     padding: 20px;
     align-items: center;
+    text-align: center;
 }
-#tituloPelicula h2{
+#tituloPelicula h5{
     background-color: springgreen;
     text-align: center;
     width: 80%;
@@ -99,7 +100,7 @@
 .singleTitle{
     background-color: lime;
     width: 80%;
-    height: 30px;
+    height: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
