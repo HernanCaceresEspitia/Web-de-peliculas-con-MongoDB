@@ -111,7 +111,7 @@ body{
 
 .singleTitle{
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(112, 160, 175, 0.8);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 10px;
@@ -136,7 +136,7 @@ body{
     overflow: hidden;
     display: inline-block;
     border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .imgEditor{
@@ -154,7 +154,7 @@ body{
 
 .dataMovie{
     width: 90%;
-    height: 140px;
+    height: 10em;
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -188,6 +188,25 @@ body{
   display: flex;
   align-items: center;
   word-break:break-all;
+}
+
+.custom-button {
+  background-color: #88B1B4; /* Verde */
+  border: none;
+  color: black;
+  padding: 5px 10px; /* Ajustar el padding para hacer los botones más pequeños */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px; /* Ajustar el tamaño de la fuente */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #A0C1B9; 
 }
 
 footer {
