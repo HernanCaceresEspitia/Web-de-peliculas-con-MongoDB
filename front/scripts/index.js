@@ -21,6 +21,7 @@ const createCard = (arrayMovie = []) => {
         const preTitle4 = document.createElement("div");
         const subTitle4 = document.createElement("div");
         const genreContainer = document.createElement("div");
+        const movieButton = document.createElement("button");
 
         // Añadir clases a los elementos
         div13.classList.add("div13");
@@ -41,6 +42,9 @@ const createCard = (arrayMovie = []) => {
         infoSection4.classList.add("infoSection");
         preTitle4.classList.add("preTitle");
         genreContainer.classList.add("genreContainer"); // Añadir clase al contenedor de géneros
+        movieButton.classList.add("movieButton");
+        
+        movieButton.innerText = "Ver Película";
         nameMovie.innerText = movie.title;
         imgsMovie.src = movie.poster;
         preTitle1.innerText = "Director: ";
@@ -57,7 +61,7 @@ const createCard = (arrayMovie = []) => {
         infoSection2.append(preTitle2, subTitle2);
         infoSection3.append(preTitle3, subTitle3);
         infoSection4.append(preTitle4, genreContainer);
-        dataMovie.append(infoSection1, infoSection2, infoSection3, infoSection4);
+        dataMovie.append(infoSection1, infoSection2, infoSection3, infoSection4, movieButton);
         imgContainer.append(imgsMovie);
         singleTitle.append(nameMovie);
         div13.append(singleTitle, imgContainer, dataMovie); // Agregar el contenedor de géneros a la tarjeta

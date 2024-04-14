@@ -1,0 +1,239 @@
+body{
+  background-color: #331E38;
+}
+
+#header {
+  width: 99vw;
+  height: fit-content;
+  background-color:#706993;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+#headerLeft{
+
+  background-color: #706993;
+  width: 50%;
+  margin-left: 20%;
+
+}
+
+#header h1 {
+  width: 50%;
+  height: 80%;
+  background-color: #70A0AF;
+  text-align: center;
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+}
+
+#headerLeft ul {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  background-color:  #706993;
+  align-items: center;
+  margin-top: 1.8%;
+  margin-left: 5%;
+  margin-bottom: 1.8%;
+  padding: 5px;
+
+}
+
+#headerLeft .il {
+  background-color:  #706993;
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 8%;
+  padding: 10px;
+  cursor: pointer;
+  width: fit-content; /* Cambia el cursor a un puntero al pasar por encima */
+}
+
+#headerLeft .il:hover {
+  text-decoration: underline; /* Subraya el texto al pasar por encima */
+}
+
+#mainContainer{
+    background-color: grey;
+    margin-top: 1vw;
+    width: 100%;
+    height: fit-content;
+    position: absolute; /*Temporal*/
+}
+#tituloPelicula{
+    background-color: #70A0AF;
+    opacity: 80%;
+    border-radius: 3rem;
+    width: 80%;
+    height: 20%;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+#tituloPelicula h2{
+    background-color: #70A0AF;
+    text-align: center;
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+#cards{
+    background-color: #A0C1B9;
+    width: 90%;
+    margin-left: 5%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    gap: 20px
+}
+.div13{
+  position: relative;
+    background-color: #70A0AF;
+    border-radius: 2rem;
+    width: 22%;
+    border: 1px #70A0AF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: calc(100% - 20px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.singleTitle{
+  position: absolute;
+  background-color: rgba(112, 160, 175, 0.8);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  z-index: 1;
+  left: 0;
+  right: 0; 
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.imgContainer{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imgEditor{
+  display: block;
+  width: 100%;
+  height: 445px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  /* Rectángulo con esquinas redondeadas */
+
+}
+.imgContainer:hover img {
+  transform: scale(1.1); /* Ajusta el tamaño de la imagen al 110% al pasar el mouse sobre el contenedor */
+}
+
+.dataMovie{
+    width: 90%;
+    height: 15em;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.dataMovie h5{
+    border: 1px solid black;
+    margin: 20px;
+    background-color: greenyellow;
+}
+
+.infoSection{
+  background-color:  #70A0AF;
+  align-items: center;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.preTitle{
+  background-color: #70A0AF;
+  width: 33%;
+  font-weight: bold;
+}
+
+.subTitle{
+  background-color: #70A0AF;
+  width: 67%;
+  display: flex;
+  align-items: center;
+  word-break:break-all;
+}
+
+.custom-button {
+  background-color: #88B1B4; /* Verde */
+  border: none;
+  color: black;
+  padding: 5px 10px; /* Ajustar el padding para hacer los botones más pequeños */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px; /* Ajustar el tamaño de la fuente */
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #A0C1B9; 
+}
+
+.movieButton {
+  margin-left: 30%;
+  margin-top: 1em;
+  background-color: #C42847; /* Verde */
+  border: none;
+  color: black;
+  padding: 10px 10px; /* Ajustar el padding para hacer los botones más pequeños */
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em; /* Ajustar el tamaño de la fuente */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.movieButton:hover {
+  background-color: #DE3C4B; 
+}
+
+footer {
+  background-color: #706993;
+  text-align: center;
+  position: relative;
+  width: 99vw; /* Fijar el footer en la parte inferior */
+  bottom: 0; /* Colocar el footer al final de la ventana */
+  margin-top: 57em; /* Ajustar la distancia entre el footer y el mainContainer */
+}
