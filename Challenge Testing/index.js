@@ -1,4 +1,4 @@
-class carritoCompra {
+class CarritoCompra {
     constructor(){
         this.products = [];
     }
@@ -22,4 +22,4 @@ class carritoCompra {
     }
 }
 
-module.exports = carritoCompra;
+module.exports = CarritoCompra;
