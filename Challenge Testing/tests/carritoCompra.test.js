@@ -7,7 +7,7 @@
 
 //? aplicarDescuento(porcentaje): Aplica un descuento al total de la compra según el porcentaje especificado.
 
-const carritoCompra = require("../index");
+const CarritoCompra = require("../index");
 
 describe("Si 'CarritoCompra' es una clase", () => {
 
@@ -16,13 +16,13 @@ describe("Si 'CarritoCompra' es una clase", () => {
         carrito = new CarritoCompra();
     });
 
-    const producto1 = { name: producto1, price: 10 }
-    const producto2 = { name: producto2, price: 20 }
+    const producto1 = { name: "producto1", price: 10 }
+    const producto2 = { name: "producto2", price: 20 }
 
 
-    it('"CarritoCompra" debe ser una clase', () => {
+    it('CarritoCompra debe ser una clase', () => {
         expect(typeof CarritoCompra).toBe("function");
-        const carrito = new carritoCompra();
+        const carrito = new CarritoCompra();
         expect(carrito instanceof CarritoCompra).toBe(true);
     });
     it('Inicializa el carrito como un array vacío.', () => {
@@ -36,7 +36,7 @@ describe("Si 'CarritoCompra' es una clase", () => {
         expect(carrito.products[0]).toEqual(producto1);
         carrito.agregarProducto(producto2);
         expect(carrito.products).toHaveLength(2);
-        expect(carrito.producto1[1]).toEqual(producto2);
+        expect(carrito.products[1]).toEqual(producto2);
     });
 
     it(' Calcula el total de la compra sumando los precios de todos los productos en el carrito.', () => {
@@ -50,7 +50,7 @@ describe("Si 'CarritoCompra' es una clase", () => {
         carrito.agregarProducto(producto2);
         expect(carrito.aplicarDescuento(100)).toBe(0);
         expect(carrito.aplicarDescuento(50)).toBe(15);
-        expect(carrito.aplicarDescuento(25)).toBe(7.5);
+        expect(carrito.aplicarDescuento(25)).toBe(22.5);
     });
 });
 
