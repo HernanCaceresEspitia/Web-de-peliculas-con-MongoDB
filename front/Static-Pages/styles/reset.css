@@ -1,0 +1,114 @@
+/* CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default styles for anchor links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset font size to make it consistent */
+body {
+    font-size: 16px;
+}
+
+/* Reset default font family to make it consistent */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Remove border outline on focused elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+    outline: none;
+}
+
+/* Reset form element styles */
+button,
+input {
+    overflow: visible;
+}
+
+/* Normalize line height */
+button,
+select {
+    text-transform: none;
+}
+
+/* Correct font weight */
+button,
+input,
+select,
+textarea {
+    font-weight: inherit;
+}
+
+/* Correct button text transformation */
+button,
+select {
+    text-transform: none;
+}
+
+/* Correct overflow not being hidden */
+button,
+input[type="reset"],
+input[type="submit"] {
+    overflow: visible;
+}
+
+/* Correct cursor style of increment and decrement buttons in Chrome */
+button::-webkit-inner-spin-button,
+button::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/* Correct padding displayed oddly in IE 10/11 */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    padding: 0;
+}
+
+/* Bring iOS styling consistent */
+@media only screen and (max-device-width: 480px) {
+    /* Correct iOS text resizing */
+    select {
+        font-size: 100%;
+    }
+}

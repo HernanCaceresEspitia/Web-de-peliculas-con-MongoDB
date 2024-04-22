@@ -1,0 +1,65 @@
+body {
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 44%, rgba(28,28,192,0.8515055680475315) 70%, rgba(0,212,255,1) 100%);
+}
+
+#header1 {
+    background-color: aqua;
+    align-items: center;
+    display: flex;
+    padding: 1.2em;
+}
+h1 {
+    margin-left: 5%;
+    margin-top: 20%;
+}
+#navBar {
+    margin-left: 50%;
+}
+
+#biography {
+    background-color: yellow;
+    height: fit-content;
+    width: auto;
+    margin-top: 1em;
+    text-align: center;
+    position: absolute;
+}
+
+#biography h2{
+    background-color: yellow;
+    height: fit-content;
+    width: auto;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+}
+#textBio {
+    background-color: slateblue;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 25em;
+    position: relative; /* Aseguramos que el texto tenga una posición relativa */
+    z-index: 2;
+
+}
+
+.image-Container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+}
+
+.image-Container img{
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: url("../Assets/Shape.png");
+    mask-image: url("../Assets/Shape.png");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.mainSection{
+    display: flex;
+}
