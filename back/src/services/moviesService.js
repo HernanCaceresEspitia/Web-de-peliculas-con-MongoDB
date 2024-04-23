@@ -1,4 +1,4 @@
-const Movies = require('../Extra/classMovie')
+const Movies = require("../models/movies");
 
 module.exports = {
     getMoviesService: async () => {
