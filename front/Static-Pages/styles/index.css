@@ -10,11 +10,11 @@ background: radial-gradient(circle, rgba(2,0,36,1) 44%, rgba(28,28,192,0.8515055
     padding: 1.2em;
 }
 h1 {
-    margin-left: 5%;
+    margin-left: 2%;
     margin-top: 20%;
 }
 #navBar {
-    margin-left: 50%;
+    margin-left: 35%;
 }
 
 #biography {
@@ -44,6 +44,67 @@ h1 {
 
 }
 
+#newMovieIn {
+    background-color: rgba(0, 212, 256, 41);
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 1.5em;
+    padding: 5%;
+    border-radius: 0.5em;
+
+}
+
+#moviesContainer {
+    background-color: white;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 0.2em;
+    display: flex;
+    gap: 0.2em;
+}
+
+/* Estilo para el botón Añadir */
+#add-button {
+    background-color: #008CBA;
+    color: white; /* Color del texto */
+    padding: 2.5px 5px; /* Espaciado interno */
+    margin: 5px; /* Margen exterior */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Borde redondeado */
+    align-items: center; /* Color de fondo */
+}
+#resetBtn {
+    background-color: red; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 2.5px 5px; /* Espaciado interno */
+    margin: 5px; /* Margen exterior */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Borde redondeado */
+    align-items: center;
+}
+
+#uploadBtn {
+    background-color: green; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 2.5px 5px; /* Espaciado interno */
+    margin: 5px; /* Margen exterior */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Borde redondeado */
+    align-items: center;
+}
+.buttonAdd {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 2.5px 5px; /* Espaciado interno */
+    margin: 5px; /* Margen exterior */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Borde redondeado */
+    align-items: center;
+}
 .image-Container {
     position: relative;
     width: 150px;
