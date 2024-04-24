@@ -16,17 +16,25 @@ function procesarFormulario() {
 
     // Crea un objeto con los valores capturados
     const pelicula = {
-        titulo: titulo,
+        title: titulo,
         year: year,
         director: director,
-        duracion: duracion,
-        generos: generos,
+        duration: duracion,
+        genre: generos,
         poster: poster
     };
 
     async function axiosPostMovie(pelicula){
-        await axios.post("http://localhost:3001/movies", pelicula) 
-    }
+        axios.post("http://localhost:3001/movies", pelicula)
+  .then(
+    response => {console.log(response)}
+  )
+  .catch(
+    error => {console.error(error)}
+  ); 
+    };
+
+    axiosPostMovie(pelicula);
 
     console.log(pelicula);
 }

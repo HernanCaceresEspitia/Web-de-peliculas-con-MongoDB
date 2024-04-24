@@ -7,6 +7,4 @@ const router = Router();
 
 router.use("/movies", moviesRouter);
 
-router.post("/movies", movieController.createMovie);
-
 module.exports = router;
