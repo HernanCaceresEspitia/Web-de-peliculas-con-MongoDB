@@ -1,3 +1,5 @@
+const { createMovie } = require("../controllers/movieController");
+const Movie = require("../models/movies");
 const Movies = require("../models/movies");
 
 module.exports = {
@@ -10,5 +12,10 @@ module.exports = {
         } catch (error) {
             throw error.message;
         }
+    },
+
+    createMovie: async (movie) => {
+        const newMovie = await Movie.create(movie);
+        return newMovie;
     }
 };
