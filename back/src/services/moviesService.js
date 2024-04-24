@@ -2,7 +2,13 @@ const Movies = require("../models/movies");
 
 module.exports = {
     getMoviesService: async () => {
-        const movies = await Movies.find();
-        return movies;
+
+        try {
+            const movies = await Movies.find();
+            return movies;
+            
+        } catch (error) {
+            throw error.message;
+        }
     }
 };

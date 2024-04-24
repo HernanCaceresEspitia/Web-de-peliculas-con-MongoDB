@@ -1,3 +1,4 @@
+require("dotenv");
 const app = require("./src/services/server");
 const configDB = require("./src/config/configDB");
 

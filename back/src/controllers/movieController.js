@@ -1,8 +1,8 @@
 const { getMoviesService } = require('../services/moviesService');
 
 module.exports = {
-    getAllMovies: (req, res) => {
-        const movie = getMoviesService();
+    getAllMovies: async (req, res) => {
+        const movie = await getMoviesService();
         res.status(200).send(movie)
     }
 }
