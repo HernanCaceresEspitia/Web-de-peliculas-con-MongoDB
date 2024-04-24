@@ -24,7 +24,10 @@ function procesarFormulario() {
         poster: poster
     };
 
-    // Aquí puedes realizar cualquier acción con el objeto "pelicula"
+    async function axiosPostMovie(pelicula){
+        await axios.post("http://localhost:3001/movies", pelicula) 
+    }
+
     console.log(pelicula);
 }
 
