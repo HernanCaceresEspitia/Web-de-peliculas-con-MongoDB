@@ -4,14 +4,16 @@ background: radial-gradient(circle, rgba(2,0,36,1) 44%, rgba(28,28,192,0.8515055
 }
 
 #header1 {
-    background-color: aqua;
+    background-color:#140D4F;
     align-items: center;
     display: flex;
-    padding: 1.2em;
+    padding: 1em;
+    color: antiquewhite;
+    height: 7em;
 }
 h1 {
     margin-left: 2%;
-    margin-top: 20%;
+    margin-top: 0.1em;
 }
 #navBar {
     margin-left: 35%;
@@ -45,10 +47,11 @@ h1 {
 }
 
 #newMovieIn {
-    background-color: rgba(0, 212, 256, 41);
+    background-color: rgba(64, 128, 135, 0.9);
     width: 60%;
     margin-left: 20%;
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
     padding: 5%;
     border-radius: 0.5em;
 
@@ -75,7 +78,7 @@ h1 {
     align-items: center; /* Color de fondo */
 }
 #resetBtn {
-    background-color: red; /* Color de fondo */
+    background-color: #BA1B1D; /* Color de fondo */
     color: white; /* Color del texto */
     padding: 2.5px 5px; /* Espaciado interno */
     margin: 5px; /* Margen exterior */
@@ -83,10 +86,12 @@ h1 {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     border-radius: 5px; /* Borde redondeado */
     align-items: center;
+    padding: 1em;
+    transition: background-color 0.3s;
 }
 
 #uploadBtn {
-    background-color: green; /* Color de fondo */
+    background-color:#29BF12; /* Color de fondo */
     color: white; /* Color del texto */
     padding: 2.5px 5px; /* Espaciado interno */
     margin: 5px; /* Margen exterior */
@@ -94,6 +99,36 @@ h1 {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     border-radius: 5px; /* Borde redondeado */
     align-items: center;
+    padding: 1em;
+    transition: background-color 0.3s;
+}
+
+#resetBtn:hover {
+    background-color: #F24333; 
+}
+
+#uploadBtn:hover {
+    background-color: #ABFF4F; 
+}
+
+#navBar {
+    color: #A0C1B9;
+}
+
+#pageFoot {
+    width: 100%;
+    z-index: 2;
+    margin-top: auto;
+    position: relative;
+    text-align: center;
+}
+
+#optBtns{
+    margin-left: 33%;
+    gap: 1.5em;
+}
+.nav{
+    color: #A0C1B9;
 }
 .buttonAdd {
     background-color: #4CAF50; /* Color de fondo */
@@ -123,4 +158,23 @@ h1 {
 
 .mainSection{
     display: flex;
+}
+
+
+.card{
+    border: #233462;
+    color: #A0C1B9;
+}
+.card-header {
+    background-color: #233462;
+    border: #1C0B19;
+}
+
+.card-body{
+    background-color: #233462;
+}
+
+.btn {
+    background-color: #315A74;
+    border: #315A74
 }

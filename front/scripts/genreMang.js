@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const movies = ["Acción", "Aventura", "Fanstasía", "Drama", "Sci-Fi", "Comedia", "Terror", "Romance"];
+    const movies = ["Acción", "Aventura", "Fanstasía", "Drama", "Sci-Fi", "Comedia", "Terror", "Romance", "Misterio", "Animada"];
     const selectmovies = document.querySelector('select[name="movies"]');
     const moviesContainer = document.getElementById('moviesContainer');
     const moviesAgregados = new Set(); // Usamos un Set para llevar un registro de los movies agregados

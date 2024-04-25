@@ -1,0 +1,163 @@
+body {
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 44%, rgba(28,28,192,0.8515055680475315) 70%, rgba(0,212,255,1) 100%);
+}
+
+#header1 {
+    background-color:#140D4F;
+    align-items: center;
+    display: flex;
+    padding: 1em;
+    color: antiquewhite;
+    height: 7em;
+}
+h1 {
+    margin-left: 2%;
+    margin-top: 0;
+}
+#navBar {
+    margin-left: 35%;
+}
+
+#biography {
+    height: fit-content;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    padding-top: 1.5em;
+}
+
+#biography h2{
+    background-color: rgba(20, 13, 79, 0.9);
+    color: antiquewhite;
+    height: 2.5em;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding: 0.6em;
+    font-family:cursive;
+}
+#textBio {
+    background-color: rgba(49, 90, 116, 0.3);
+    border-radius: 15px;
+    color: antiquewhite;
+    margin-top: 1em;
+    margin-left: 10em;
+    margin-right: 5em;
+    margin-bottom: 0;
+    position: relative; /* Aseguramos que el texto tenga una posición relativa */
+    z-index: 2;
+    width: 40%;
+    padding: 0.5em;
+    font-size: 18px;
+
+}
+
+#hobbies {
+    height: fit-content;
+    width: 100%;
+    color: antiquewhite;
+    margin-top: 1em;
+    text-align: left;
+    position: relative;
+    padding-top: 1.5em;
+}
+
+#hobbies h2{
+    background-color: rgba(20, 13, 79, 0.9);
+    color: antiquewhite;
+    height: 2.5em;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding: 0.6em;
+    font-family:cursive;
+}
+
+#hobbies p{
+    margin-left: 2.5em;
+}
+#myDog {
+    height: fit-content;
+    width: auto;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+#myDog h2{
+    font-family:cursive;
+    padding: 1.3em;
+    background-color: rgba(20, 13, 79, 0.8);
+    color: antiquewhite;
+    height: 2.5em;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    padding: 0.6em;
+}
+#pageFoot {
+    width: 100%;
+    z-index: 2;
+    margin-top: auto;
+    position: relative;
+    text-align: center;
+}
+
+#profilePic {
+    height: 600px;
+    width: auto;
+}
+
+#hobbiePic {
+    height: 300px;
+    width: auto;
+}
+
+#dogPic {
+    height: 300px;
+    width: auto;
+    position: relative;
+}
+.imageContainer{
+    width: auto;
+    height: auto;
+    padding: 20em;
+    margin: 20em;
+    background-color: green;
+    align-items: center;
+    display: flex;
+}
+.mainSection{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 5em;
+    padding: 2em;
+}
+
+.card{
+    border: #233462;
+    color: #A0C1B9;
+  }
+  .card-header {
+    background-color: #233462;
+    border: #1C0B19;
+  }
+  
+  .card-body{
+    background-color: #233462;
+  }
+  
+  .btn {
+    background-color: #315A74;
+    border: #315A74
+  }

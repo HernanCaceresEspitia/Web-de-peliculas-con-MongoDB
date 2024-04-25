@@ -1,54 +1,47 @@
 body{
-  background-color: #331E38;
+  background-color: #1c1cc0;
 }
 
 #header {
   width: 99vw;
   height: fit-content;
-  background-color:#706993;
+  background-color:#4EA699;
   display: flex;
-  position: relative;
+  position: fixed;
   align-items: center;
+  z-index: 2;
 }
 
 #headerLeft{
 
-  background-color: #706993;
+  background-color: #4EA699;
   width: 50%;
   margin-left: 20%;
-
 }
 
 #header h1 {
+  color: #A0C1B9;
   width: 50%;
   height: 80%;
-  background-color: #70A0AF;
+  background-color: #315a74;
   text-align: center;
   margin-top: 0.2em;
   margin-left: 0.5em;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+  
 }
 
 #headerLeft ul {
   width: 90%;
   list-style: none;
   display: flex;
-  background-color:  #706993;
+  background-color: #315A74;
   align-items: center;
-  margin-top: 1.8%;
+  margin-top: 1%;
   margin-left: 5%;
-  margin-bottom: 1.8%;
   padding: 5px;
 
-}
-
-#headerLeft .il {
-  background-color:  #706993;
-  border-radius: 20px;
-  padding: 3px;
-  margin-left: 8%;
-  padding: 10px;
-  cursor: pointer;
-  width: fit-content; /* Cambia el cursor a un puntero al pasar por encima */
 }
 
 #headerLeft .il:hover {
@@ -56,35 +49,37 @@ body{
 }
 
 #mainContainer{
-    background-color: grey;
-    margin-top: 1vw;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 44%, rgba(26,26,172,1) 70%, rgba(0,212,255,0.41453077813156514) 100%);
+    margin-top: 6vw;
     width: 100%;
     height: fit-content;
     position: absolute; /*Temporal*/
 }
 #tituloPelicula{
-    background-color: #70A0AF;
-    opacity: 80%;
-    border-radius: 3rem;
-    width: 80%;
-    height: 20%;
-    margin-top: 2%;
-    margin-left: 10%;
+    background-color: #140d4f;
+    color: #88B1B4;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    width: 100%;
+    height: auto;
+    margin-top: 3.44%;
     padding: 20px;
     align-items: center;
     text-align: center;
+    position: fixed;
+    z-index: 2;
 }
 #tituloPelicula h2{
-    background-color: #70A0AF;
+    background-color:#4EA699;
     text-align: center;
-    width: 80%;
+    width: 100%;
     height: fit-content;
     padding: 10px;
     margin-left: 10%;
 }
 
 #cards{
-    background-color: #A0C1B9;
     width: 90%;
     margin-left: 5%;
     height: fit-content;
@@ -96,9 +91,18 @@ body{
     margin-top: 2%;
     gap: 20px
 }
+
+#pageFoot {
+  width: 100%;
+  z-index: 2;
+  margin-top: auto;
+  position: relative;
+  text-align: center;
+}
+
 .div13{
   position: relative;
-    background-color: #70A0AF;
+    background-color: #233462;
     border-radius: 2rem;
     width: 22%;
     border: 1px #70A0AF;
@@ -111,7 +115,8 @@ body{
 
 .singleTitle{
   position: absolute;
-  background-color: rgba(112, 160, 175, 0.8);
+  background-color: rgba(35, 52, 98, 0.9);
+  color: #A0C1B9;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 10px;
@@ -128,7 +133,7 @@ body{
 .imgContainer{
     position: relative;
     display: inline-block;
-    background-color: white;
+    background-color: #1C0B19;
     display: grid;
     align-items: center;
     height: auto;
@@ -167,7 +172,7 @@ body{
 }
 
 .infoSection{
-  background-color:  #70A0AF;
+  background-color:  #233462;
   align-items: center;
   width: 85%;
   display: flex;
@@ -175,16 +180,17 @@ body{
   margin-top: 5px;
   margin-left: 20px;
   margin-bottom: 5px;
+  color: #A0C1B9;
 }
 
 .preTitle{
-  background-color: #70A0AF;
+  background-color: #233462;
   width: 33%;
   font-weight: bold;
 }
 
 .subTitle{
-  background-color: #70A0AF;
+  background-color: #233462;
   width: 67%;
   display: flex;
   align-items: center;
@@ -192,9 +198,9 @@ body{
 }
 
 .custom-button {
-  background-color: #88B1B4; /* Verde */
+  background-color: #140D4F; /* Verde */
   border: none;
-  color: black;
+  color: #A0C1B9;
   padding: 5px 10px; /* Ajustar el padding para hacer los botones más pequeños */
   text-align: center;
   text-decoration: none;
@@ -229,11 +235,20 @@ body{
   background-color: #DE3C4B; 
 }
 
-footer {
-  background-color: #706993;
-  text-align: center;
-  position: relative;
-  width: 99vw; /* Fijar el footer en la parte inferior */
-  bottom: 0; /* Colocar el footer al final de la ventana */
-  margin-top: 57em; /* Ajustar la distancia entre el footer y el mainContainer */
+.card{
+  border: #233462;
+  color: #A0C1B9;
+}
+.card-header {
+  background-color: #233462;
+  border: #1C0B19;
+}
+
+.card-body{
+  background-color: #233462;
+}
+
+.btn {
+  background-color: #315A74;
+  border: #315A74
 }

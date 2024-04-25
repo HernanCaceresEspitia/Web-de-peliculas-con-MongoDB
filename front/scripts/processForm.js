@@ -26,19 +26,27 @@ function procesarFormulario() {
 
     async function axiosPostMovie(pelicula){
         axios.post("http://localhost:3001/movies", pelicula)
-  .then(
-    response => {console.log(response)}
-  )
-  .catch(
-    error => {console.error(error)}
-  ); 
+        .then(
+        response => {console.log(response)}
+        )
+        .catch(
+        error => {console.error(error)}
+        ); 
     };
 
     axiosPostMovie(pelicula);
 
     console.log(pelicula);
+    alert("¡Película subida exitosamente!");
+    resetForm();
+    
 }
 
 // Agrega un event listener al botón "Subir película" para llamar a la función de procesamiento del formulario
 document.getElementById("uploadBtn").addEventListener("click", procesarFormulario);
+
+function resetForm() {
+  const form = document.getElementById("movieForm");
+  form.reset();
+}
 
